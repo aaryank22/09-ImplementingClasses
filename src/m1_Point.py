@@ -78,6 +78,24 @@ class Point(object):
     def get_distance_from_start(self):
         return ((self.x - self.start_x) ** 2 + (self.y - self.start_y) ** 2) ** 0.5
 
+    def get_distance_traveled(self):
+
+    def closer_to(self, p2, p3):
+        distance = ((p2.x - self.x) ** 2 + (p2.y - self.y) ** 2) ** 0.5
+        distance2 = ((p3.x - self.x) ** 2 + (p3.y - self.y) ** 2) ** 0.5
+        if distance >= distance2:
+                return distance2
+        if distance2 >= distance:
+                return distance
+
+
+
+
+
+
+    def halfway_to():
+
+
 
 
 
@@ -494,7 +512,7 @@ def run_test_move_by():
             print('** value; in fact, it returned:', check_has_no_return)
         """
     # -------------------------------------------------------------------------
-    # TODO: 7.  Follow the same instructions as in _TODO_ 3 above,
+    # DONE: 7.  Follow the same instructions as in _TODO_ 3 above,
     #           but for the  move_by  method specified above.
     # -------------------------------------------------------------------------
     print()
@@ -593,7 +611,7 @@ def run_test_get_number_of_moves_made():
         print('Actual for p2 moves made:  ', p2.get_number_of_moves_made())
     """
     # -------------------------------------------------------------------------
-    # TODO: 8.  Follow the same instructions as in _TODO_ 3 above,
+    # DONE: 8.  Follow the same instructions as in _TODO_ 3 above,
     #    but for the  get_number_of_moves_made  method specified above.
     # TODO (continued):  HINT: What must a Point REMEMBER for this method?
     # -------------------------------------------------------------------------
@@ -806,7 +824,7 @@ def run_test_get_distance_from_start():
         print('Actually is:', p2.get_distance_from_start())
     """
     # -------------------------------------------------------------------------
-    # TODO: 10.  Follow the same instructions as in _TODO_ 3 above,
+    # DONE: 10.  Follow the same instructions as in _TODO_ 3 above,
     #    but for the  get_distance_from_START  method specified above.
     # -------------------------------------------------------------------------
     print()
